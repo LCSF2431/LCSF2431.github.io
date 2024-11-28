@@ -2,23 +2,121 @@
 Author: Dani Andrade
 Student Number: C0943686
 File Name: styles.css
+#C7CFD9
+#0F528C
+#164F73
+#2D90A6
+#A69B65
+https://color.adobe.com/es/create/image#
 */
+
 /* CSS Reset */
-body, header, nav, main, footer, div, img {
+body, header, nav, main, footer, h1, div, img, ul, figure,  figcaption, section,  article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
 /* Style rules for body and images */
 body {
     background-color: #DDDEDB;
+    font-family: 'Lato', serif;
 }
 
 img {
     max-width: 100%;
     display: block;
 }
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/*Style rule for container*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Style rule for header */
+#header-nav {
+    display: flex; 
+    align-items: center; 
+    background-color: #164F73;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+}
+
+header {
+    width: 25%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* Style for rules for navigation area */
+nav {
+    width: 75%;
+    padding: 6.79em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1em;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav li a {
+    font-family: 'Changa One', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    padding: 0.1em 0.75em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav li a:hover {
+    color: #2D90A6;
+    background-color: #fff;
+}
+
 /* Style rules for main content */
+main {
+    display: block;
+    font-size: 1.2em;
+    font-family: 'Lato', serif;
+    margin: 0.2% 0;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+    box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.5);
+}
+
 /* Style rules for footer content */
+footer {
+    display: block;
+    background-color: #164F73;
+    font-size: 0.85em;
+    text-align: center;
+    color: #fff;
+    margin-top: 0.2%;
+    padding: 0.4em;
+}
