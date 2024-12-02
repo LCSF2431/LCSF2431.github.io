@@ -8,7 +8,6 @@ File Name: styles.css
 #164F73 dark blue, nav color
 #2D90A6 light blue 
 #A69B65 light brown
-https://color.adobe.com/es/create/image#
 */
 
 /* CSS Reset */
@@ -61,6 +60,10 @@ header img {
     height: auto;
 }
 
+img, video {
+    max-width: 100%;
+    display: block;
+}
 
 /* Style for rules for navigation area */
 nav {
@@ -95,16 +98,10 @@ nav li a {
     display: inline-block;
 }
 
-nav li a:hover {
-    color: #2D90A6;
-    background-color: #fff;
-}
-
 /* Style rules for main content */
 main {
     display: block;
-    font-size: 1.5em;
-    font-family: 'Lato', serif;
+    font-size: 1.6em;
     margin: 0.2% 0 0 0;
     padding: 0.5% 1%;
     border-radius: 5px;
@@ -119,6 +116,86 @@ main h3 {
     color: #164F73;
     font-weight: bold;
     text-shadow: 10px 10px 10px #C7CFD9;
+}
+
+/*Style rules for specials page*/
+#product-of-the-week {
+    display: flex;
+    background-color: #fff;
+    margin: 2.5em 4em;
+    padding: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    width: 50%; 
+    padding-right: 2em;
+}
+
+.product-info h1, .product-info h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #164F73;
+    margin: 0.2em 0;
+    line-height: 1.2;
+}
+
+.product-info h2 {
+    font-size: 2.3em;
+}
+
+.product-info p, .product-info ul {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.product-info ul {
+    padding-left: 1.5em;
+    margin: 1em 0;
+}
+
+.product-info button {
+    background-color: #164F73;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #2D90A6;
+}
+
+.product-image {
+    margin: 1em;
+    width: 50%;
+}
+
+.product-image img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.guarantee-info {
+    background-color: #C7CFD9;
+    border-top: 1px solid #164F73;
+    border-bottom: 1px solid #164F73;
+    margin: 2em 1em;
+    padding: 1em;
+}
+
+.guarantee-info span {
+    font-weight: bold;
+    color: #164F73
+}
+
+.guarantee-info img {
+    width: 40%;
+    margin: 0 auto;
 }
 
 /* Style rules for footer content */
