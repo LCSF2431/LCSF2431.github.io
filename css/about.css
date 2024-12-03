@@ -11,107 +11,133 @@ File Name: about.css
 */
 
 
-/* Media Queries for Mobile Viewport */
-@media (max-width: 600px) {
+/* Style rules for Mobile Viewport */
 
+@media (max-width: 629px), 
+print {
     #header-nav {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    
     header {
         width: 50%;
-        height: 160px;
+        height: auto;
         padding: 0;
     }
 
-    .mobile {
-        display: block;
-    }
-    .tablet, .desktop {
-        display: none;
-    }
-
-    nav {
-        padding: 1%;
-        margin-bottom: 2%;
+    header img {
         width: 100%;
     }
-
+    
+    nav {
+        margin-bottom: 0.3em;
+        width: 100%;
+    }
+    
     nav ul {
-        flex-direction: column; 
-        list-style-type: none;
+        flex-direction: column;
         text-align: center;
     }
-
+    
     nav li {
         border-top: 1px solid #fff;
         width: 100%;
-        margin-left: 0;
+        margin: 0;
     }
-
+    
     nav li:first-child {
         border-top: none;
     }
-
+    
     nav li a {
+        font-size: 1.7em;
         padding: 0.5em 1em;
     }
+
+    #our-story img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    
+    .tablet-desktop {
+        display: none;
+    }
+
 }
 
 /* Media Queries Tablet Viewport */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .tablet {
+@media screen and (min-width: 630px) and (max-width: 1024px),
+print {
+
+    .tablet-desktop  {
         display: block;
     }
-    .mobile, .desktop {
-        display: none;
+
+    #header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 0;
+    }
+
+    header {
+        width: 20%;
+        height: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
     }
 
     nav ul {
-        flex-direction: row; /* Menú en fila */
-        justify-content: center; /* Centrado horizontal */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.5em;
     }
 
-    nav ul li {
-        margin: 0.5em 1em;
+    nav li {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #fff;
+        margin: 0;
+        height: 1em;
+        padding: 0 0.5em;
     }
 
-    nav ul li a {
-        font-size: 1.1em;
-        padding: 0.5em 1.5em;
+    nav li:last-child {
+        border-right: none;
+    }
+ 
+    nav li a {
+        font-size: 0.9em;
+        margin: 0;
     }
 
-    .our-story img {
-        width: 50%;
-        height: 20%;
+    #our-story img {
+        height: 10%;
         margin: 0.2em auto;
     }
+        
 }
-
-/* Media Queries Desktop Viewport*/
-/*@media (min-width: 1025px) {
-    .desktop {
-        display: block;
-    }
-    .mobile, .tablet {
-        display: none;
-    }
-
-    nav ul {
-        flex-direction: row; 
-        justify-content: flex-end;
-
-    nav ul li {
-        margin: 0 1em;
-    }
-
-    nav ul li a {
-        font-size: 1.2em;
-        padding: 0.5em 2em;
-    }
-} */
 
 /* Media Query for Print */
 @media print {
@@ -128,6 +154,64 @@ nav li a:hover {
 }
 
 nav ul li a:active {
-    background-color: #A69B65; 
-    color: #fff; 
+    background-color: #A69B65;
+    color: #fff;
 }
+
+#about-company {
+    padding: 0.5em;
+    background-color: #fff;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about-company h1 {
+    font-size: 1.8em;
+}
+
+#about-company h1, #our-story h2, #six-reasons h2 {
+    color: #164F73;
+    margin: 0.3em;
+}
+
+#about-company p, #our-story p, #six-reasons p {
+    padding-left: 0.5em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+#our-story {
+    margin-top: 1em;
+}
+
+#our-story img {
+    width: auto;
+    margin: 1em auto;
+    height: 550px;
+    border-radius: 5px;
+}
+
+#provide-text {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#six-reasons {
+    margin-top: 1em;
+}
+
+#six-reasons ol {
+    padding-left: 1.2em;
+    font-size: 1em;
+}
+
+#six-reasons ol li {
+    margin-bottom: 0.7em;
+}
+
+#six-reasons p {
+    font-weight: bold;
+    color: #164F73;
+}
+
