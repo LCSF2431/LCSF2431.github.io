@@ -1,0 +1,217 @@
+/*
+Author: Dani Andrade
+Student Number: C0943686
+File Name: styles.css
+#DDDEDB background color
+#C7CFD9 light gray
+#0F528C is not being used, dark blue
+#164F73 dark blue, nav color
+#2D90A6 light blue 
+#A69B65 light brown
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure,  figcaption, section,  article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #DDDEDB;
+    font-family: 'Lato', serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/*Style rule for container*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style rule for header area */
+#header-nav {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #164F73;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+}
+
+header {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+header img {
+    width: 50%;
+    height: auto;
+}
+
+img, video {
+    width: 100%;
+    display: block;
+}
+
+/* Style for rules for navigation area */
+nav {
+    width: 75%;
+    height: auto;
+    padding: 1em 0; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-align: right;
+    margin: 0.5em;
+}
+
+nav li {
+    margin-left: 1em;
+}
+
+nav li a {
+    font-family: 'Changa One', sans-serif;
+    font-size: 1.9em;
+    color: #fff;
+    padding: 0.1em 0.75em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Style rules for main content */
+main {
+    display: block;
+    font-size: 1.6em;
+    margin: 1.5em auto;
+    padding: 0.5% 1%;
+}
+
+#company-name {
+    font-weight: bold;
+}
+
+main h3 {
+    color: #164F73;
+    font-weight: bold;
+}
+
+#intro {
+    background-color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#intro img {
+    width: 30%;
+    margin: 0 auto
+}
+
+/*Style rules for specials page*/
+#product-of-the-week {
+    display: flex;
+    background-color: #fff;
+    margin: 0 1em;
+    padding: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    width: 50%; 
+    padding-right: 2em;
+}
+
+.product-info h1, .product-info h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #164F73;
+    margin: 0.2em 0;
+    line-height: 1.2;
+}
+
+.product-info h2 {
+    font-size: 2.3em;
+}
+
+.product-info p, .product-info ul {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.product-info ul {
+    padding-left: 1.5em;
+    margin: 1em 0;
+}
+
+.product-info button {
+    background-color: #164F73;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #2D90A6;
+}
+
+.product-image {
+    margin: 1em;
+    width: 50%;
+}
+
+.product-image img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.guarantee-info {
+    background-color: #C7CFD9;
+    border-top: 1px solid #164F73;
+    border-bottom: 1px solid #164F73;
+    margin: 2em 1em;
+    padding: 1em;
+}
+
+.guarantee-info span {
+    font-weight: bold;
+    color: #164F73
+}
+
+.guarantee-info img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* Style rules for footer content */
+footer {
+    display: block;
+    background-color: #164F73;
+    font-size: 0.88em;
+    text-align: center;
+    color: #fff;
+    margin-top: 0.1%;
+    padding: 0.4em;
+}

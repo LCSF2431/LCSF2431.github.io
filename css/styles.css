@@ -99,10 +99,8 @@ nav li a {
 main {
     display: block;
     font-size: 1.6em;
-    margin: 0.2% 0 0 0;
+    margin: 1.5em auto;
     padding: 0.5% 1%;
-    border-radius: 5px;
-    box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.5);
 }
 
 #company-name {
@@ -114,11 +112,24 @@ main h3 {
     font-weight: bold;
 }
 
+#intro {
+    background-color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#intro img {
+    width: 30%;
+    margin: 0 auto
+}
+
 /*Style rules for specials page*/
 #product-of-the-week {
     display: flex;
     background-color: #fff;
-    margin: 2.5em 4em;
+    margin: 0 1em;
     padding: 1.2em;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);

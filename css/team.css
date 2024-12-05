@@ -1,0 +1,109 @@
+/*
+Author: Dani Andrade
+Student Number: C0943686
+File Name: team.css
+#DDDEDB background color
+#C7CFD9 light gray
+#0F528C is not being used, dark blue
+#164F73 dark blue, nav color
+#2D90A6 light blue 
+#A69B65 light brown
+*/
+
+/* Styles rules for the Team page */
+
+/* Style Rules for for main content */
+main {
+    display: flex;
+    gap: 1em;
+    margin: 1.5em 1em;
+}
+
+/* Style rules for Left Column: Who We Are + Our Story */
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    min-width: 80%;
+}
+
+/* Style rules for Who We Are Section */
+#who-we-are {
+    padding: 1.5em;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style rules for Team Members Section */
+
+.team-category {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.team-member {
+    background: #DDDEDB;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    object-fit: cover; 
+}
+
+.team-member figcaption, #our-story figcaption {
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h1 {
+    color: #164F73;
+}
+
+/* Style rules for Our Story Section */
+#our-story {
+    padding: 1.5em;
+    background: #DDDEDB;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 3em;
+}
+
+#our-story img {
+    width: auto;
+    height: 18em;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+}
+
+/* Style rules for Right Column: Did You Know? */
+aside {
+    flex: 1;
+    background-color: #C7CFD9;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+    border-radius: 10px;
+}
