@@ -86,7 +86,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 1em;
+    gap: 0.5em;
 }
 
 nav li a {
