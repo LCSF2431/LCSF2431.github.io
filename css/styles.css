@@ -273,9 +273,6 @@ main h3 {
     text-align: center;
 }
 
-
-
-
 /* Style rules for media page */
 
 #music, #video {
@@ -291,6 +288,11 @@ main h3 {
 #video {
     padding: 1em;
     background-color: #fff;
+}
+
+#gif {
+    width: 20%;
+    margin: 0 auto;
 }
 
 /* Style rules for footer content */
