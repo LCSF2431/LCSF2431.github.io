@@ -74,6 +74,10 @@ input {
     
 }
 
+span {
+    color: #ff0000;
+}
+
 #newproducts, #trainingpro, #purchadv, #prfcontact {
     width: auto;
     height: auto;
