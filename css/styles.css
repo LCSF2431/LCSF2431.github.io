@@ -79,22 +79,19 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style-type: none;
     text-align: right;
     margin: 0.5em;
-    padding: 0;
 }
 
 nav li a {
     font-family: 'Changa One', sans-serif;
-    font-size: 1.9em;
+    font-size: 1.8em;
     color: #fff;
-    padding: 0.1em 0.5em;
+    padding: 0.1em 0.75em;
     text-decoration: none;
     display: inline-block;
-    white-space: nowrap;
-    
 }
 
 /* Style rules for main content */
