@@ -4,7 +4,7 @@ Student Number: C0943686
 File Name: about.css
 #DDDEDB background color
 #C7CFD9 light gray
-#0F528C is not being used, dark blue
+#0F528C dark blue
 #164F73 dark blue, nav color
 #2D90A6 light blue 
 #A69B65 light brown
@@ -17,7 +17,7 @@ File Name: about.css
 nav li a:hover {
     color: #2D90A6;
     background-color: #fff;
-    transform: scale(1.3);
+    transform: scale(1.0);
 }
 
 nav ul li a:active {
@@ -36,6 +36,7 @@ nav ul li a:active {
 #about-company h1, #our-story h2, #six-reasons h2 {
     color: #164F73;
     margin: 0.3em 1em;
+    text-align: center;
 }
 
 #about-company p, #our-story p, #six-reasons p {
@@ -44,15 +45,35 @@ nav ul li a:active {
     margin: 0.5em 1em;
 }
 
-#our-story {
-    margin-top: 1em;
+.about-image {
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 0.5em;
 }
 
-#our-story img {
-    width: auto;
-    height: 18em;
-    margin: 0 auto;
-    border-radius: 5px;
+#our-story {
+    margin-top: 2em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.story-box {
+    background-color: #DDDEDB;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 1em);
+    text-align: left;
 }
 
 #provide-text {
@@ -70,10 +91,12 @@ nav ul li a:active {
 }
 
 #six-reasons ol {
+    list-style-position: inside;
     padding-left: 1.2em;
     font-size: 1em;
-    margin: 0.5em 1em;
+    margin: 0.5em 0;
 }
+
 
 #six-reasons ol li {
     margin-bottom: 0.7em;
@@ -139,16 +162,22 @@ print {
         margin: 0.3em;
     }
 
-    #our-story img {
-        width: 100%;
-        max-height: 8em;
+    .story-container {
+        flex-direction: column; 
+        gap: 1em;
     }
 
-    #six-reasons ol {
-        padding-left: 1.2em;
-        font-size: 1em;
-        margin: 0.5em;
+    .story-box {
+        flex: 1 1 100%; 
+        margin-bottom: 1em;
     }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+    }
+
     
     .mobile {
         display: block;
@@ -221,9 +250,19 @@ print {
         margin: 0;
     }
 
-    #our-story img {
-        height: 10%;
-        margin: 0.2em auto;
+    .story-container {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .story-box {
+        flex: 1 1 calc(50% - 1em);
+        margin-bottom: 1em;
+    }
+
+    .about-image {
+        width: 70%; 
+        margin: 1em auto;
     }
         
 }

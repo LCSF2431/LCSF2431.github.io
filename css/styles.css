@@ -4,7 +4,7 @@ Student Number: C0943686
 File Name: styles.css
 #DDDEDB background color
 #C7CFD9 light gray
-#0F528C is not being used, dark blue
+#0F528C dark blue
 #164F73 dark blue, nav color
 #2D90A6 light blue 
 #A69B65 light brown
@@ -62,10 +62,13 @@ header img {
     height: auto;
 }
 
+/* Style rules for images and video */
+
 img, video {
     width: 100%;
     display: block;
 }
+
 
 /* Style for rules for navigation area */
 nav {
@@ -107,6 +110,11 @@ main {
     font-weight: bold;
 }
 
+main h2, #music h2 {
+    color: #164F73;
+    text-align: center;
+}
+
 main h3 {
     color: #164F73;
     font-weight: bold;
@@ -125,8 +133,58 @@ main h3 {
     margin: 0 auto
 }
 
+#quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 1em auto;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.quick-link-box {
+    background-color: #C7CFD9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 30%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-link-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quick-link-box h3 {
+    color: #164F73;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.quick-link-box p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.quick-link-box a {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: #fff;
+    background-color: #164F73;
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.quick-link-box a:hover {
+    background-color: #133B5C;
+}
+
 /*Style rules for specials page*/
-#product-of-the-week {
+#product-of-the-week, .faq-section {
     display: flex;
     background-color: #fff;
     margin: 0 1em;
@@ -146,6 +204,7 @@ main h3 {
     color: #164F73;
     margin: 0.2em 0;
     line-height: 1.2;
+    text-align: left;
 }
 
 .product-info h2 {
@@ -204,6 +263,38 @@ main h3 {
 .guarantee-info img {
     width: 40%;
     margin: 0 auto;
+}
+
+/* Style rules for faqs page */
+.faq-heading {
+    color: #164F73;
+    text-align: center;
+}
+
+.faq-section {
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+
+
+/* Style rules for media page */
+
+#music, #video {
+    width: 50%;
+    margin: 1em auto;
+    padding: 0.3em;
+    background-color: #C7CFD9;
+    text-align:  center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#video {
+    padding: 1em;
+    background-color: #fff;
 }
 
 /* Style rules for footer content */

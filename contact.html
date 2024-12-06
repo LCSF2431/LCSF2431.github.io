@@ -7,9 +7,11 @@ Student Number: C0943686 -->
     <title>Penguin Ice Cream Maker</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -46,24 +48,98 @@ Student Number: C0943686 -->
         <main>
 
             <div id="contact">
-                <p>Our specialist will help you with all your doubts, don't be a strange and feel free to reach us at
-                    anytime.
-                    All of our stores are open Monday to Saturday from 9am to 6pm, and you can reach us online 24x7</h1>
-                <h4>Call us: +1 (416) 123-4567</p>
-                    <h4>Email us: <a href="mailto:info@penguinicecreammaker.com">info@penguinicecreammaker</a></h4>
+                <h3>Our specialist will help you with all your doubts. Contact us today.</h3>
+                <h4>(416) 123-4567</p>
+                    <h4>Email us: <a href="mailto:info@penguinicecreammaker.com"
+                            class="email-contact">info@penguinicecreammaker</a></h4>
                     <h4>Visit us at: 123 Maple Street, Toronto, ON</h4>
 
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.7567104857226!2d-79.38575922472431!3d43.653229852430236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cc627a19bf%3A0x6e4a2923a91a34a2!2s123%20Maple%20Street%2C%20Toronto%2C%20ON%20M5G%201P5%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2sus!4v1726971225650!5m2!1ses-419!2sus"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+
+            <div id="form">
+                <h3>We'd love to hear from you! Please fill out the form below to get in touch.</h3>
+                <!-- Start Form -->
+                <form class="form-grid">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+
+                        <!-- 1. Instructions -->
+                        <ol>
+                            <li>Fill in your personal details.</li>
+                            <li>Provide information about your inquiry.</li>
+                            <li>Submit the form or reset it if needed.</li>
+                        </ol>
+
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+
+                        <label for="grpfit"><input type="checkbox" name="interest" id="newproducts" value="Group
+                                Fitness">New Products</label>
+
+                        <label for="prtrain"><input type="checkbox" name="interest" id="trainingpro" value="Personal
+                                Training">Training Programs</label>
+
+                        <label for="nutr"><input type="checkbox" name="interest" id="purchadv"
+                                value="Nutrition">Purchasing advice</label>
+
+                        <p>Preferred Contact Method:</p>
+                        <label>
+                            <input type="radio" name="contact-method" value="email" id="prfcontact" required>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="phone" id="prfcontact" required>
+                            Phone
+                        </label>
+                        <label for="date">Preferred Contact Date:</label>
+                        <input type="date" id="contact-date" name="contact-date" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for="reference">How did you find us?</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value=“google”>Google</option>
+                            <option value=“social”>Social Media</option>
+                            <option value=“other”>Other</option>
+                        </select>
+
+                        <label for="questions"> Questions?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="SUBMIT" class="btn" />
+                    <input type="reset" id="reset" value="RESET" class="btn" />
+                </form>
             </div>
 
         </main>
 
         <!-- Use the footer area to add webpage footer content -->
         <footer>
-            <p>&copy; Copyright 2099. All Rights Reserved.
+            <p>&copy; Copyright 2024. All Rights Reserved.
             <p><a href="mailto:info@penguinicecreammaker.com">Request Information</a></p>
             Dani Andrade &nbsp; &nbsp; C0943686</p>
         </footer>

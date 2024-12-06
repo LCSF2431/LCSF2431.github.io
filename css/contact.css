@@ -1,0 +1,106 @@
+/*
+Author: Dani Andrade
+Student Number: C0943686
+File Name: contact.css
+#DDDEDB background color
+#C7CFD9 light gray
+#0F528C dark blue
+#164F73 dark blue, nav color
+#2D90A6 light blue 
+#A69B65 light brown
+*/
+
+#contact {
+    text-align: center;
+}
+
+.email-contact {
+    color: #666600;
+}
+
+.map {
+    width: 97%;
+    height: 50%;
+}
+
+/* Style rules for form */
+form {
+    width: auto;
+}
+
+#form {
+    margin: 1em;
+    background-color: #fff;
+    padding: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: 3px solid #164F73;
+    padding: 1em;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+input {
+    width: 50%;
+    height: 2.5em;
+    border-radius: 3px;
+    
+}
+
+#newproducts, #trainingpro, #purchadv, #prfcontact {
+    width: auto;
+    height: auto;
+    transform: scale(1.4);
+    margin-right: 0.8em;
+}
+
+select, #questions {
+    padding: 2%;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.btn {
+    grid-column: 1 / span 3;
+}
+
+form #submit, form #reset {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 1% 1.5%;
+    background-color: #C7CFD9;
+    font-family: 'Lato', serif;
+    font-size: 0.8em;
+    border-radius: 10px;
+}
