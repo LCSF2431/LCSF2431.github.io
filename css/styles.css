@@ -85,13 +85,9 @@ nav ul {
     margin: 0.5em;
 }
 
-nav li {
-    gap: 0.5em;
-}
-
 nav li a {
     font-family: 'Changa One', sans-serif;
-    font-size: 1.9em;
+    font-size: 1.7em;
     color: #fff;
     padding: 0.1em 0.75em;
     text-decoration: none;

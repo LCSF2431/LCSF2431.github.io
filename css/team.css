@@ -86,6 +86,10 @@ h1 {
     margin-top: 3em;
 }
 
+#our-story figcaption {
+    font-size: 0.7em;
+}
+
 #our-story img {
     width: auto;
     height: 18em;
